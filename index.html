@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VICESTATE — Drop 01</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#09090d;color:#f5f3f7;font-family:Arial,Helvetica,sans-serif}
+header{position:sticky;top:0;z-index:5;background:rgba(9,9,13,.92);backdrop-filter:blur(12px);border-bottom:1px solid #25232b;padding:18px 5%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:25px;font-weight:900;letter-spacing:4px}nav a{color:#ddd;text-decoration:none;margin-left:24px;font-size:13px}
+.hero{min-height:62vh;display:flex;align-items:end;padding:7% 6%;background:radial-gradient(circle at 75% 35%,#4b164c 0,#181025 32%,#09090d 68%)}
+.hero h1{font-size:clamp(55px,11vw,140px);line-height:.82;margin:0;letter-spacing:-7px}.pink{color:#ff2f92}
+.hero p{max-width:560px;color:#aaa;font-size:17px;line-height:1.6}.cta{display:inline-block;background:#ff2f92;color:#fff;padding:14px 20px;text-decoration:none;font-weight:800;margin-top:10px}
+.wrap{padding:70px 5%}.top{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}h2{font-size:38px;margin:0}.muted{color:#888}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#111116;border:1px solid #24232a;padding:12px;position:relative}.card img{width:100%;display:block;background:#17131d}.tag{color:#ff2f92;font-size:11px;letter-spacing:2px;margin-top:13px}h3{margin:7px 0;font-size:17px}.card p{color:#bbb;margin:0 0 13px}button{width:100%;border:0;background:#f3f0ea;color:#111;padding:12px;font-weight:800;cursor:pointer}button:hover{background:#ff2f92;color:#fff}
+.cart{position:fixed;right:20px;bottom:20px;background:#ff2f92;color:#fff;border-radius:999px;padding:15px 19px;font-weight:900;box-shadow:0 10px 35px #0008}
+footer{padding:50px 5%;border-top:1px solid #24232a;color:#777;text-align:center}
+@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}nav{display:none}.hero{min-height:55vh}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}h2{font-size:30px}}
+</style></head><body>
+<header><div class="logo">VICESTATE</div><nav><a href="#shop">SHOP</a><a href="#drop">DROP 01</a><a href="#footer">INFO</a></nav></header>
+<section class="hero"><div><div class="pink">DROP 01 / 2026</div><h1>WEST<br>COAST<br>AFTER DARK.</h1><p>Original streetwear inspired by California nights, neon streets and the energy of the coast.</p><a class="cta" href="#shop">SHOP DROP 01</a></div></section>
+<section class="wrap" id="shop"><div class="top"><div><div class="pink">VICESTATE</div><h2>DROP 01</h2></div><div class="muted">9 PIECES</div></div><div class="grid"><article class="card"><img src="images/cap.svg" alt="VICESTATE CAP"><div class="tag">DROP 01</div><h3>VICESTATE CAP</h3><p>49,90 €</p><button onclick="add('VICESTATE CAP','49,90 €')">IN DEN WARENKORB</button></article>
+<article class="card"><img src="images/tee1.svg" alt="WEST COAST TEE"><div class="tag">DROP 01</div><h3>WEST COAST TEE</h3><p>39,90 €</p><button onclick="add('WEST COAST TEE','39,90 €')">IN DEN WARENKORB</button></article>
+<article class="card"><img src="images/tee2.svg" alt="NIGHT DRIVE TEE"><div class="tag">DROP 01</div><h3>NIGHT DRIVE TEE</h3><p>39,90 €</p><button onclick="add('NIGHT DRIVE TEE','39,90 €')">IN DEN WARENKORB</button></article>
+<article class="card"><img src="images/hoodie.svg" alt="AFTER DARK HOODIE"><div class="tag">DROP 01</div><h3>AFTER DARK HOODIE</h3><p>79,90 €</p><button onclick="add('AFTER DARK HOODIE','79,90 €')">IN DEN WARENKORB</button></article>
+<article class="card"><img src="images/jeans.svg" alt="BAGGY DENIM"><div class="tag">DROP 01</div><h3>BAGGY DENIM</h3><p>89,90 €</p><button onclick="add('BAGGY DENIM','89,90 €')">IN DEN WARENKORB</button></article>
+<article class="card"><img src="images/cargo.svg" alt="CITY CARGO"><div class="tag">DROP 01</div><h3>CITY CARGO</h3><p>74,90 €</p><button onclick="add('CITY CARGO','74,90 €')">IN DEN WARENKORB</button></article>
+<article class="card"><img src="images/bag.svg" alt="NIGHT BAG"><div class="tag">DROP 01</div><h3>NIGHT BAG</h3><p>44,90 €</p><button onclick="add('NIGHT BAG','44,90 €')">IN DEN WARENKORB</button></article>
+<article class="card"><img src="images/boxer.svg" alt="VICESTATE BOXER"><div class="tag">DROP 01</div><h3>VICESTATE BOXER</h3><p>19,90 €</p><button onclick="add('VICESTATE BOXER','19,90 €')">IN DEN WARENKORB</button></article>
+<article class="card"><img src="images/socks.svg" alt="VICESTATE SOCKS"><div class="tag">DROP 01</div><h3>VICESTATE SOCKS</h3><p>14,90 €</p><button onclick="add('VICESTATE SOCKS','14,90 €')">IN DEN WARENKORB</button></article></div></section>
+<div class="cart" id="cart">WARENKORB: 0</div>
+<footer id="footer">VICESTATE — ORIGINAL STREETWEAR • © 2026</footer>
+<script>
+let count=0;function add(n,p){count++;document.getElementById('cart').textContent='WARENKORB: '+count;}
+</script></body></html>

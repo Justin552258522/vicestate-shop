@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 460">
+<defs><radialGradient id="g"><stop stop-color="#2b2435"/><stop offset="1" stop-color="#2d2d2a"/></radialGradient></defs>
+<rect width="620" height="460" rx="28" fill="url(#g)"/>
+<circle cx="520" cy="80" r="95" fill="#ff9a5c" opacity=".10"/>
+<text x="38" y="48" fill="#fff" font-size="14" font-family="Arial" letter-spacing="4">VICESTATE / DROP 01</text>
+<path d="M265 155h90l-8 65 32 145h-62l-17-95-17 95h-62l32-145z" fill="#ff9a5c" opacity=".9"/><rect x="235" y="250" width="52" height="45" rx="7" fill="#fff" opacity=".13"/><rect x="333" y="250" width="52" height="45" rx="7" fill="#fff" opacity=".13"/>
+<text x="38" y="418" fill="#fff" font-size="21" font-family="Arial" font-weight="700">VICESTATE CITY CARGO</text>
+<text x="38" y="442" fill="#aaa" font-size="13" font-family="Arial">CALIFORNIA • WEST COAST • ORIGINAL STREETWEAR</text>
+</svg>
